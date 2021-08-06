@@ -92,7 +92,13 @@
 
     <div class="container">
       <div class="main_btns">
-        <a href="#" class="main_btn">Google Search</a>
+        <a
+          id="google_search"
+          data-modal-target="#modal"
+          href="#"
+          class="main_btn"
+          >Google Search</a
+        >
         <a href="#" class="main_btn">I'm Feeling Lucky</a>
       </div>
     </div>
@@ -136,6 +142,15 @@
         </ul>
       </div>
     </footer>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Google Search</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div id="modal-body" class="modal-body"></div>
+    </div>
+    <div id="overlay"></div>
+
     <script src="google.js"></script>
   </body>
 </html>
